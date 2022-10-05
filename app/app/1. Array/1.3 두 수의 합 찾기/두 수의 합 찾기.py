@@ -26,20 +26,3 @@ def two_sum_idea2(nums: List[int], target: int) -> List[int]:
 
 print(two_sum_idea1(NUMS, TARGET))
 print(two_sum_idea2(NUMS, TARGET))
-
-NUM: int = 9
-NUM_LIST: List[int] = [5, 12, 7, 10, 9, 1, 2, 3, 11, 6]
-RESULT: int = 17
-
-
-def two_sum_baekjoon3273(num: int, num_list: List[int], result: int) -> int:
-    list_to_dict: Dict[int, int] = {val: idx for idx, val in enumerate(num_list)}
-    check_num: int = 0
-    for key, val in enumerate(list_to_dict):
-        search_val: int = result - key
-        if list_to_dict.get(search_val) is not None and list_to_dict[search_val] != key:
-            check_num += 1
-    return check_num
-
-
-print(two_sum_baekjoon3273(NUM, NUM_LIST, RESULT))
