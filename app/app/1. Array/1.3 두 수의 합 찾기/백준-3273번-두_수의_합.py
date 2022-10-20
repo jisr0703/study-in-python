@@ -5,7 +5,7 @@ from typing import List
 # NUMS: List[int] = sorted(list(map(int, sys.stdin.readline().split())))
 # X: int = int(input())
 N = 9
-NUMS = sorted( [5, 12, 7, 10, 9, 1, 2, 3, 11])
+NUMS = sorted([5, 12, 7, 10, 9, 1, 2, 3, 11])
 X = 13
 
 
