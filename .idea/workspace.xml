@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="516be9f1-7229-43fe-8d70-76e6ae4270d2" name="Changes" comment="1.13, 1.14 완료">
-      <change afterPath="$PROJECT_DIR$/app/app/1. Array/1.14 단어 찾기/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app/1. Array/1.14 단어 찾기/백준-15705번-단어_찾기.py" afterDir="false" />
+    <list default="true" id="516be9f1-7229-43fe-8d70-76e6ae4270d2" name="Changes" comment="1.14 추가 문제 완료">
+      <change afterPath="$PROJECT_DIR$/app/app/2. String/2.3 회문/회문.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/1. Array/1.3 두 수의 합 찾기/백준-3273번-두_수의_합.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/1. Array/1.3 두 수의 합 찾기/백준-3273번-두_수의_합.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +50,8 @@
       <recent name="D:\work\python\algorithms-and-data-structures-in-Python\app\app\두 수의 합 찾기" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.백준-15705번-단어_찾기">
-    <configuration name="배열에서 다수의 요소 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.회문">
+    <configuration name="배열에서 삽입 위치 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithms-and-data-structures-in-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,11 +59,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/app/1. Array/1.9 배열에서 다수의 요소 찾기" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/app/1. Array/1.5 배열에서 삽입 위치 찾기" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app/1. Array/1.9 배열에서 다수의 요소 찾기/배열에서 다수의 요소 찾기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app/1. Array/1.5 배열에서 삽입 위치 찾기/배열에서 삽입 위치 찾기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,7 +303,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="배열에서 삽입 위치 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="배열에서 다수의 요소 찾기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithms-and-data-structures-in-Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,11 +311,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/app/1. Array/1.5 배열에서 삽입 위치 찾기" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/app/1. Array/1.9 배열에서 다수의 요소 찾기" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app/1. Array/1.5 배열에서 삽입 위치 찾기/배열에서 삽입 위치 찾기.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app/1. Array/1.9 배열에서 다수의 요소 찾기/배열에서 다수의 요소 찾기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="회문" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algorithms-and-data-structures-in-Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/app/2. String/2.3 회문" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/app/2. String/2.3 회문/회문.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,8 +347,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.회문" />
         <item itemvalue="Python.백준-15705번-단어_찾기" />
-        <item itemvalue="Python.배열에서 삽입 위치 찾기" />
         <item itemvalue="Python.파스칼의 삼각형" />
       </list>
     </recent_temporary>
@@ -427,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666092652064</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.14 추가 문제 완료">
+      <created>1666266331697</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666266331697</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,6 +480,7 @@
     <MESSAGE value="1.10 배열의 회전" />
     <MESSAGE value="1.11 빠진 숫자 찾기" />
     <MESSAGE value="1.13, 1.14 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.13, 1.14 완료" />
+    <MESSAGE value="1.14 추가 문제 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.14 추가 문제 완료" />
   </component>
 </project>
