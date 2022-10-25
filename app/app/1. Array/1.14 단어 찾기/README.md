@@ -87,5 +87,5 @@ STRTSR \
 STSTSS
 
 ---
-##### 출처
+#### 출처
 https://www.acmicpc.net/problem/15705
