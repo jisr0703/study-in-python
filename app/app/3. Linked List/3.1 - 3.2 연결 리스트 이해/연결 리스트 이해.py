@@ -2,8 +2,8 @@ from typing import Any
 
 
 class Node:
-    def __init__(self, data: Any):
-        self.data = data
+    def __init__(self, val: Any):
+        self.val = val
         self.next = None
 
 
@@ -11,8 +11,8 @@ class LinkedList:
     def __init__(self):
         self.head = None
 
-    def push_back(self, data: Any):
-        new_node = Node(data)
+    def push_back(self, val: Any):
+        new_node = Node(val)
 
         if self.head is None:
             self.head = new_node
@@ -24,8 +24,8 @@ class LinkedList:
 
         last.next = new_node
 
-    def push(self, data: Any):
-        new_node = Node(data)
+    def push(self, val: Any):
+        new_node = Node(val)
 
         if self.head is None:
             self.head = new_node
@@ -35,18 +35,18 @@ class LinkedList:
         self.head = new_node
         new_node.next = temp
 
-    def remove(self, data: Any):
+    def remove(self, val: Any):
         curr = self.head
         prev = None
 
         if curr is not None:
-            if curr.data == data:
+            if curr.val == val:
                 self.head = curr.next
                 curr = None
                 return
 
         while curr is not None:
-            if curr.data == data:
+            if curr.val == val:
                 break
             prev = curr
             curr = curr.next
@@ -67,7 +67,7 @@ class LinkedList:
             return
 
         next_node = node.next
-        node.data = next_node.data
+        node.val = next_node.val
         node.next = next_node.next
 
         next_node = None
@@ -76,7 +76,7 @@ class LinkedList:
         temp = self.head
 
         while temp:
-            print(temp.data, end=' ')
+            print(temp.val, end=' ')
             temp = temp.next
         print()
 
