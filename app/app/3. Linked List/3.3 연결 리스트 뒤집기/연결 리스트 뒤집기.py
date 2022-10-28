@@ -72,7 +72,7 @@ def reverseList_idea3(head: Node, linked: ListNode = None) -> Node:
     return reverse_list
 
 
-print('------------------------\nIDEA 1')
+print('IDEA 1')
 list_node_idea1 = ListNode()
 
 node1 = Node(1)
@@ -95,16 +95,16 @@ print('------------------------')
 print('IDEA 2')
 list_node_idea2 = ListNode()
 
-node1 = Node(12)
-node2 = Node(323)
-node3 = Node(548)
-node4 = Node(997)
+node5 = Node(12)
+node6 = Node(323)
+node7 = Node(548)
+node8 = Node(997)
 
-node1.next = node2
-node2.next = node3
-node3.next = node4
+node5.next = node6
+node6.next = node7
+node7.next = node8
 
-list_node_idea2.headSet(node1)
+list_node_idea2.headSet(node5)
 print(f'based linked : ', end='')
 list_node_idea2.traverse()
 
@@ -115,14 +115,14 @@ print('------------------------')
 print('IDEA 3')
 list_node_idea3 = ListNode()
 
-node1 = Node(10)
-node2 = Node(20)
-node3 = Node(30)
-node4 = Node(40)
+node9 = Node(10)
+node10 = Node(20)
+node11 = Node(30)
+node12 = Node(40)
 
-node1.next = node2
-node2.next = node3
-node3.next = node4
+node9.next = node10
+node10.next = node11
+node11.next = node12
 
 list_node_idea3.headSet(node1)
 print(f'based linked : ', end='')
