@@ -52,6 +52,28 @@ class BinarySearchTree:
         else:
             parent.right = new_node
 
+    def create_bst(self, nodes_list):
+        nodes = [None if item is None else Node(item)
+                 for item in nodes_list]
+
+        # root node
+        self.__root = nodes[0]
+
+        for index in range(1, len(nodes)):
+            node = nodes[index]
+
+            if node is not None:
+                parent_index = (index - 1) // 2
+                parent = nodes[parent_index]
+                if parent is None:
+                    raise ValueError(
+                        f'Missing parent node at index {parent_index},'
+                        f' Node({node.data})')
+                if index % 2 == True:
+                    parent.left = node
+                else:
+                    parent.right = node
+
     def inorder_traverse(self):
         result = []
         self._inorder_rec(self.__root, result)
@@ -156,21 +178,39 @@ class BinarySearchTree:
         return node
 
 
-bst = BinarySearchTree()
-bst.insert(20)
-bst.insert(25)
-bst.insert(14)
-bst.insert(30)
-bst.insert(23)
-bst.insert(18)
-bst.insert(11)
-bst.insert(21)
-bst.insert(15)
-print(bst.inorder_traverse())
-print(f'find 25: {bst.find(25)}')
-print(f'find 0: {bst.find(0)}')
+print('=====================================')
+bst_1 = BinarySearchTree()
+bst_1.insert(20)
+bst_1.insert(25)
+bst_1.insert(14)
+bst_1.insert(30)
+bst_1.insert(23)
+bst_1.insert(18)
+bst_1.insert(11)
+bst_1.insert(21)
+bst_1.insert(15)
+print(bst_1.inorder_traverse())
+print(f'find 25: {bst_1.find(25)}')
+print(f'find 0: {bst_1.find(0)}')
 # bst.delete(25)
 # bst.delete(18)
-bst.delete(21)
-print(bst.inorder_traverse())
-
+bst_1.delete(21)
+print(bst_1.inorder_traverse())
+print('=====================================')
+# 20 25 14 30 23 18 11 21 15
+bst_2 = BinarySearchTree()
+datas = list(map(int, input().split(' ')))
+for num in datas:
+    bst_2.insert(num)
+print(bst_2.inorder_traverse())
+print('=====================================')
+# 14 42 35 33 31 19 27 10 N N N N 26 N N
+bst_3 = BinarySearchTree()
+input_datas = []
+for i in input().split(' '):
+    if i == 'N':
+        input_datas.append(None)
+    else:
+        input_datas.append(int(i))
+bst_3.create_bst(input_datas)
+print(bst_3.inorder_traverse())
