@@ -177,6 +177,45 @@ class BinarySearchTree:
                 node = child
         return node
 
+    def depth_first_search(self):
+        res_iter = self.dfs_iter()
+        print(f'dfs iter : {res_iter}')
+
+    def dfs_iter(self):
+        if not self.__root:
+            return[]
+
+        stack = []
+        result = []
+
+        stack.append(self.__root)
+
+        while len(stack) != 0:
+            node = stack.pop()
+
+            result.append(node.data)
+
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+        return result
+
+    def depth_first_search_rec(self):
+        res_rec = []
+        self.dfs_rec(self.__root, res_rec)
+        print(f'dfs rec : {res_rec}')
+
+    def dfs_rec(self, node, result):
+        if not node:
+            return
+
+        result.append(node.data)
+        if node.left:
+            self.dfs_rec(node.left, result)
+        if node.right:
+            self.dfs_rec(node.right, result)
+
 
 print('=====================================')
 bst_1 = BinarySearchTree()
@@ -214,3 +253,25 @@ for i in input().split(' '):
         input_datas.append(int(i))
 bst_3.create_bst(input_datas)
 print(bst_3.inorder_traverse())
+print('=====================================')
+# 20 14 25 11 18 23 30 N N 15 N 21 N N N
+bst_4 = BinarySearchTree()
+input_datas = []
+for i in input().split(' '):
+    if i == 'N':
+        input_datas.append(None)
+    else:
+        input_datas.append(int(i))
+bst_4.create_bst(input_datas)
+bst_4.depth_first_search()
+print('=====================================')
+# 20 14 25 11 18 23 30 N N 15 N 21 N N N
+bst_5 = BinarySearchTree()
+input_datas = []
+for i in input().split(' '):
+    if i == 'N':
+        input_datas.append(None)
+    else:
+        input_datas.append(int(i))
+bst_5.create_bst(input_datas)
+bst_5.depth_first_search_rec()
